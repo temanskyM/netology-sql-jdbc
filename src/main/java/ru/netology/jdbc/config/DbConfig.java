@@ -13,8 +13,6 @@ public class DbConfig {
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)
-                .addScript("classpath:db/migration/schema.sql")
-                .addScript("classpath:db/migration/data.sql")
                 .build();
     }
 }
