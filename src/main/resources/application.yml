@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:5432/jdbc
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: none
